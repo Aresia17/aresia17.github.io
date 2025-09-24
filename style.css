@@ -30,22 +30,23 @@
     display: inline-block;
 }
 .button, .compCard{
-    font-size: 3em;
+    font-size: 4em;
 }
 .button:hover{
     transform: scale3d(1.1);
     background-color: #ffdcec;
     transition: 0.3s ease-in-out;
-    font-size: 5.4em;
+    font-size: 4.4em;
 }
 .grass{
     width: 400px;
     height: 400px;
     background-color: #a8d5a2;
-    border: 6px double #4caf50;
+    border: 3px double #4caf50;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    
 }
 .mouse{
     font-size: 3rem;
@@ -63,5 +64,4 @@
     padding: 10px;
     border: 10px solid rgb(255, 198, 166);
     border-radius: 10px;
-
 }
