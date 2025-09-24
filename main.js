@@ -14,6 +14,7 @@ const translation = {
         life: "Life:",
         count: "Count:",
         time: "Time:",
+        
         execute: "This monkey embezzled my bananas to my rival, this is your target: ",
         rpsExpl: 
         "Classic rock paper scissors. Rock beats scissors, paper beats rock, scissors beat paper <br> 📄>🪨>✂️<br>🪨>✂️>📄<br>✂️>📄>🪨<br></br>",
@@ -45,6 +46,45 @@ const translation = {
     
     }
 };
+//feti
+function endLose(){
+    const duration = 2 * 1000,
+    animationEnd = Date.now() + duration;
+
+    let skew = 1;
+
+    function randomInRange(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+    (function frame() {
+    const timeLeft = animationEnd - Date.now(),
+        ticks = Math.max(200, 500 * (timeLeft / duration));
+
+    skew = Math.max(0.8, skew - 0.001);
+
+    confetti({
+        particleCount: 1,
+        startVelocity: 0,
+        ticks: ticks,
+        origin: {
+        x: Math.random(),
+        // since particles fall down, skew start toward the top
+        y: Math.random() * skew - 0.2,
+        },
+        colors: ["#008cff5b"],
+        shapes: ["circle"],
+        gravity: randomInRange(0.4, 0.6),
+        scalar: randomInRange(0.4, 1),
+        drift: randomInRange(-0.4, 0.4),
+    });
+
+    if (timeLeft > 0) {
+        requestAnimationFrame(frame);
+    }
+    })();
+}
+
 // // const language = document.getElementById('language');
 // language.addEventListener('change', ()=>{
 //     const currentlang = language.value;
@@ -61,6 +101,7 @@ const translation = {
 //     const currentlang = language.value;
 //     localStorage.setItem('lang', currentlang);
 // });
+
 const language = document.getElementById('language');
 language.value = localStorage.getItem('lang') || 'en';
 
@@ -259,7 +300,7 @@ function gameEvil(){
     count.textContent = caught; 
     time.textContent = timeLeft;
     life.textContent = lives;
-    resultTxt.textContent = translation[currentLang].execute + evilValue.toUpperCase + ' ' + emojis[evilValue];
+    resultTxt.textContent = translation[currentLang].execute + evilValue.toUpperCase() + ' ' + emojis[evilValue];
     for(let i=0; i<36; i++){
         let evil = keys[Math.floor(Math.random()*3)];
         let monkey = document.createElement('div');
@@ -356,3 +397,4 @@ if (document.getElementById('canvas')) {
 if (document.querySelector('.userCard')) {
     gameRps();
 }
+
