@@ -14,7 +14,7 @@ const translation = {
         life: "Life:",
         count: "Count:",
         time: "Time:",
-        
+
         execute: "This monkey embezzled my bananas to my rival, this is your target: ",
         rpsExpl: 
         "Classic rock paper scissors. Rock beats scissors, paper beats rock, scissors beat paper <br> 📄>🪨>✂️<br>🪨>✂️>📄<br>✂️>📄>🪨<br></br>",
@@ -204,13 +204,13 @@ function gameChase(){
 
     function moveMouse(){
         if(gameOver) return;
-        const max = 400-108; // x& y same, so taking same values at max x & y
+        const max = grass.clientWidth - mouse.clientWidth; // x& y same, so taking same values at max x & y
         const x = Math.floor(Math.random()*max);
         const y = Math.floor(Math.random()*max);
         mouse.style.left = x + 'px';
         mouse.style.top = y + 'px';
     }
-    const moveInterval = setInterval(moveMouse, 760);
+    const moveInterval = setInterval(moveMouse, 700);
 
     mouse.addEventListener('click', (e)=>{
         e.stopPropagation();
