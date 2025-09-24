@@ -30,7 +30,7 @@
     display: inline-block;
 }
 .button, .compCard{
-    font-size: 5em;
+    font-size: 3em;
 }
 .button:hover{
     transform: scale3d(1.1);
@@ -63,4 +63,5 @@
     padding: 10px;
     border: 10px solid rgb(255, 198, 166);
     border-radius: 10px;
+
 }
