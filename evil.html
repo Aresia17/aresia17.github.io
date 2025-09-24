@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evil Monkey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"></head>
+<body>
+    <div class="title">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="index.html" class="link">
+                        <p>&lt;</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <h1 class="text-center" data-key="evil">Evil Monkey</h1>
+                </div>
+                <div class="col text-end">
+                    <select name="Language" id="language" class="lan">
+                        <option value="en">English</option>
+                        <option value="mn">Монгол</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="container">
+        <div class="row">
+            <h1 id="evilResult"></h1>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm">
+                <h3 data-key="life">Life:</h3><h3 id="elife"></h3>
+            </div>
+            <div class="col-sm">
+                <h3 data-key="count">Count:</h3><h3 id="ecount"></h3>
+            </div>
+            <div class="col-sm">
+                <h3 data-key="time">Time:</h3><h3 id="etime"></h3>
+            </div>
+        </div>
+        <div class="position-relative mx-auto" style="background-color: antiquewhite;">
+            <div id="canvas">
+
+            </div>
+        </div>
+        
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Week stuff</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="title">
+        <div class="container">
+            <div class="row-cols-1 row-cols-md-1">
+                <div class="col">
+                    <h1 class="text-center" data-key="title">Ruby's playground</h1>
+                </div>
+                <div class="col text-end">
+                    <select name="Language" id="language" class="lan">
+                        <option value="en">English</option>
+                        <option value="mn">Монгол</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col">
+                    <a href="rps.html" class="text-decoration-none">
+                        <div class="card text-center h-100">
+                            <div class="card-body">
+                                <h1 class="card-title">🪨📄✂️</h1>
+                                <h4 class="card-text" data-key="rps">Rock Paper Scissors</h4>
+                                <p class="class-text" data-key="rpsExpl">
+                                    Classic rock paper scissors. Rock beats scissors, paper beats rock, scissors beat paper <br>
+                                    📄>🪨>✂️<br>
+                                    🪨>✂️>📄<br>
+                                    ✂️>📄>🪨<br>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="chase.html" class="text-decoration-none">
+                        <div class="card text-center h-100">
+                            <div class="card-body">
+                                <h1 class="card-title">🐁🧶😾</h1>
+                                <h4 class="card-text" data-key="chase">Mouse Chase</h4>
+                                <p class="card-text" data-key="chaseExpl">
+                                    You are a hungry mouse trying to catch a cat for dinner.
+                                    The mouse will zoom around in the grassy area, 
+                                    your job is to catch it as many times as possible within given time. <br>
+                                    Game ends in victory if you catch the mouse three times. 🐁🐁🐁
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="evil.html" class="text-decoration-none">
+                        <div class="card text-center h-100">
+                            <div class="card-body">
+                                <h1 class="card-title">🙈🙉🙊</h1>
+                                <h4 class="card-text" data-key="evil">Evil Monkey</h4>
+                                <p class="card-text" data-key="evilExpl">
+                                    The game will randomly choose between eyes, ears, mouth and will generate 50 monkeys.
+                                    You will have to eliminate the monkeys with the given attributes 
+                                    (eyes=🙈, ears=🙉, mouth=🙊) <br>
+                                    You have 30 seconds and 3 lives, try not to eliminate innocent monkeys, you monster.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>
