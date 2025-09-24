@@ -39,20 +39,21 @@
     font-size: 4.4em;
 }
 .grass{
-    width: 400px;
-    height: 400px;
+    width: 90vw;
+    max-width: 400px;
+    aspect-ratio: 1/1;
     background-color: #a8d5a2;
     border: 3px double #4caf50;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    
+    margin: 1rem auto;
 }
 .mouse{
     font-size: 3rem;
     cursor: pointer;
     position: absolute;
-    padding: 23px;
+    padding: 10px;
     box-sizing: border-box;
 }
 #canvas{
